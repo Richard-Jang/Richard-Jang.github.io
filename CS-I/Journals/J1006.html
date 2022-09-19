@@ -32,6 +32,46 @@
     h3{
 	color: white;
     }
+
+    button {
+	padding: 20px;
+	width: 250px;
+	border-radius: 10px;
+	color: white;
+	background-color: black;
+	transition: all 0.4s;
+	cursor: pointer;
+	font-size: 24px;
+	text-align: center;
+	border: none;
+	background-color: #2B4865;
+    }
+
+    button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.4s;
+    }
+
+    button span:after {
+	content: '\00bb';
+	position: absolute;
+	transition: 0.4s;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+    }
+
+    button:hover span {
+	padding-right: 25px;
+    }
+
+    button:hover span:after {
+	opacity: 1;
+	right: 0;
+    }
+    
   </style>
 
   <body>
@@ -44,7 +84,7 @@
     <br>
 
     <p class="Question">I recieved assistance from: no one</p>
-    <p class="Question">I assisted: no one</p>
+    <p class="Question">I assisted: Mina and Ethan</p>
     <br>
 
     <p class="Question">1.1:What is Git communicating to you?
@@ -96,11 +136,12 @@
     <br>
 
     <p class="Question">How could this experience be improved?</p>
-    <p class="Answers">I think more picture examples of what is supposed to be there would help.</p>
+    <p class="Answers">I think more picture examples of what is supposed to be there wouldo help.</p>
     <br>
 
     <p class="Question">Free Reflection: How has what I've learned affected my thinking?</p>
     <p class="Answers">What I learned today has changed my view on backups and using git to make them.</p>
 
+    <a href="https://codermerlin.com/users/ming-ruei-jang/Digital%20Portfolio/CS-I/index.html"><button type="button"><span>Back to Index</span></button>
   </body>
-  </html>
+</html>

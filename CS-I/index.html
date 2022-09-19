@@ -1,0 +1,81 @@
+<!DOCYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Advanced Computer Science I</title>
+  </head>
+
+  <body>
+    <style>
+
+      body {
+	  background-color: #2B4865;
+	  color: white;
+	  font-family: Courier New, Monospace;
+	  text-align: left;
+      }
+      
+     button {
+          display: inline-block;
+          padding: 24px;
+          width: 600px;
+          border-radius: 10px;
+          background-color: #256D85;
+          color: white;
+          transition: all 0.4s;
+          cursor: pointer;
+          font-size: 24px;
+          text-align: center;
+          border: none;
+      }
+
+      button span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.4s;
+      }
+
+      button span:after {
+          content: '\00bb';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -20px;
+          transition: 0.4s;
+      }
+
+      button:hover span {
+	  padding-right: 25px;
+      }
+
+      button:hover span:after {
+          opacity: 1;
+          right: 0;
+      }
+
+
+      
+    </style>
+
+    <h1>Advanced Computer Science I</h1>
+
+    <h2>Journals</h2>
+    
+    <p><a href="Journals/J1002.html"><button type="button"><span>J1002: Shell</span></button></a></p>
+    <br />
+    
+    <p><a href="Journals/J1006.html"><button type="button"><span>J1006: Source Control</span></button></a></p>
+    <br />
+
+    <p><a href="https://codermerlin.com/users/ming-ruei-jang/Digital%20Portfolio/CS-I/Journals/J1012.html"><button type="button"><span>J1012: Alternative Base Addition</span></button></p></a>
+    <br />
+
+    <p><a href="https://codermerlin.com/users/ming-ruei-jang/Digital%20Portfolio/CS-I/Journals/J1013.html"><button type="span"><span>J1013 Boolean Algebra</span></button></a></p>
+    <br />
+    
+    <p><a href="https://codermerlin.com/users/ming-ruei-jang/Digital%20Portfolio/index.html"><button type="button"><span>Return to Digital Portfolio</span></button></a></p>
+    <br />
+    
+  </body>
+</html>
