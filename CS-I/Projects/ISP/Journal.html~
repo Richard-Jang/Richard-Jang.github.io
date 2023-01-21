@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ISP Journal</title>
+    <link rel="stylesheet" href="../../Journals/style.css">
+  </head>
+
+  <body>
+    <h1 style="text-align: left;">Name: Richard Jang</h1>
+
+    <br>
+    <h1>CS-I ISP Journal</h1>
+    <br>
+    <ul class="nav">
+      <li class="nav"><a href="https://codermerlin.com/users/ming-ruei-jang/Digital%20Portfolio/index.html" class="nav">Home</a></li>
+      <li class="nav"><a href="https://codermerlin.com/users/ming-ruei-jang/Digital%20Portfolio/AboutMe.html" class="nav">About Me</a></li>
+      <li class="nav" style="float: right"><a href="https://codermerlin.com/users/ming-ruei-jang/Digital%20Portfolio/CS-III/index.html" class="nav">Computer Science III</a></li>
+      <li class="nav" style="float: right"><a href="https://codermerlin.com/users/ming-ruei-jang/Digital%20Portfolio/CS-II/index.html" class="nav">Computer Science II</a></li>
+      <li class="nav" style="float: right"><a href="https://codermerlin.com/users/ming-ruei-jang/Digital%20Portfolio/CS-I/index.html" class="nav">Computer Science I</a></li>
+    </ul>
+    <br>
+
+    <!-- <\!-- <\\!-- <h2>Date: Day-Mon-Year</h2> -\\-> -\-> -->
+    <!-- <\!-- <\\!-- <p><b>Technical Challenges: </b></p> -\\-> -\-> -->
+    <!-- <\!-- <\\!-- <p><b>Scheduling Challenges: </b></p> -\\-> -\-> -->
+    <!-- <\!-- <\\!-- <p><b>Interpersonal Challenges: </b></p> -\\-> -\-> -->
+    <!-- <\!-- <\\!-- <br> -\\-> -\-> -->
+    
+    <h2>Date: 16-Jan-2023</h2>
+    <p><b>Technical Challenges: </b></p>
+    <p><b>Scheduling Challenges: </b></p>
+    <p><b>Interpersonal Challenges: </b></p>
+    <br>
+    
+    <h2>Date: 8-Jan-2023</h2>
+    <p><b>Technical Challenges: </b>I spent the entire week studing for the quiz this week, so I didn't have much time to do learning on my own. Next week I plan to study the Swift textbook my friend gave me to better understand the language.</p>
+    <br>
+    <p><b>Scheduling Challenges: </b>The first two weeks were not that busy, but club activites are starting again. I might get even more busy as a club officer, but I will see what I can do.</p>
+    <br>
+    <p><b>Interpersonal Challenges: </b>This is week 3, and nothing has happened yet. I plan to finally talk to my team next week.</p>
+    <br>
+    
+    
+    <h2>Date: 2-Jan-2023</h2>
+    <p><b>Software Engineers</b> design and create computer systems to solve real-world problems. I'm decent at creating programs, but I still need to improve my skills. Throughout the year, I plan to research and practice swift as much as possible.</p>
+    <br>
+    <p><b>QA Engineers</b> find and fix bugs in a program before launch. Sometimes I can be quite careless while working and make some simple mistakes. If I want to do this, I just have to be more precise and careful whenever I am doing somethng.</p>
+    <br>
+    <p><b>Project Managers</b> is responsible for the planning, execution and completion of a game. I'm not good at management positions and often procrastinate, so I wouldn't be fit for this position. I would have to be more responsible for my schedule and be able to work better with others.</p>
+    <br>
+    <p><b>Product Managers</b> prioritize customer needs and wants. This position wouldn't be suitable for me because doing sales and research needs social skills that I don't have. Speaking to more people would help me with this skill.</p>
+    <br>
+    <p><b>Release Engineers</b> have to implement code into products to ensure that products have to correct functionality. I would be able to fill this role because I am decent with tech-related subjects.</p>
+    <br>
+    <p><b>Technical Challenges: </b>We don't really know much swift yet, so the beginning stages of programming the app will be challenging. In due time, it</p>
+    <br>
+    <p><b>Scheduling Challenges: </b>My schedule is very packed, so I doubt that I will be able to work in person. The only thing I can do is code on my own time or in class.</p>
+    <br>
+    <p><b>Interpersonal Challenges: </b>I don't really know my teammates yet, so getting everyone to work together will be hard. Hopefully next week will have a better turnout.</p>
+    <br>
+
+    <a href="index.html"><button type="button" class="button1"><span>CS-I Index</span></button></a>
+  </body>
+</html>
