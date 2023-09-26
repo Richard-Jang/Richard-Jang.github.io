@@ -1,0 +1,7 @@
+.head {
+    background-image: url("../Files/background.svg");
+}
+
+h1 {
+    text-color: white;
+}
