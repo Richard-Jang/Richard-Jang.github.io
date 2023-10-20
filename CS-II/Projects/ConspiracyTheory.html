@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Conspiracy Theories</title>
+    <link rel="stylesheet" href="../../Styles/style.css">
+
+  </head>
+
+  <body>
+    <div class="head">
+      <div class="heading border" style="margin: auto; border-style: solid; width: 90%; background-color: #E2E2E2; position: relative;">
+	<h1 style="text-decoration: none;"><i>Conspiracy Theories</i></h1>
+      </div>
+    </div>
+    <br>
+
+    <div class="nav" style="clear: both; position: sticky;">
+      <ul class="nav" style="position: relative;">
+	<li class="nav"><a href="https://codermerlin.com/users/ming-ruei-jang/Digital%20Portfolio/index.html" class="nav">Home</a></li>
+	<li class="nav"><a href="https://codermerlin.com/users/ming-ruei-jang/Digital%20Portfolio/AboutMe.html" class="nav">About Me</a></li>
+	<li class="nav" style="float: right"><a href="https://codermerlin.com/users/ming-ruei-jang/Digital%20Portfolio/CS-III/index.html" class="nav">Computer Science III</a></li>
+	<li class="nav" style="float: right"><a href="https://codermerlin.com/users/ming-ruei-jang/Digital%20Portfolio/CS-II/index.html" class="nav">Computer Science II</a></li>
+	<li class="nav" style="float: right"><a href="https://codermerlin.com/users/ming-ruei-jang/Digital%20Portfolio/CS-I/index.html" class="nav">Computer Science I</a></li>
+      </ul>
+      <br>
+    </div>
+  
+    
+    <div style='border-style: double; width: 80%; background-color: #E2E2E2; position: relative; margin: auto; clear: both;'>
+      <!--
+	  <h3 class="subheading"></h3>
+      <p style="text-indent: 50px; padding: 10px;"></p>
+      <br>
+      -->
+
+      <h3 class="subheading">The Basics of Recommendation Algorithms</h3>
+      <p style="text-indent: 50px; padding: 10px;">Recommendation Algorithms play an essential role in personalizing a user’s experience on different platforms. The purpose of a recommendation algorithm is to determine the user’s preferences and find content that the user might enjoy based on these preferences.Typically, recommendation algorithms are split into two different types using different types of data: collaborative filtering models and content-based models. The collaborative filtering algorithm uses data that is gathered from feedback, either implicit (such as watch time for a video) or explicit (such as a like on a post) of either the user or the item that is being recommended.</p>
+      <p style="text-indent: 50px; padding: 10px;">The collaborative filtering algorithm is divided into three subcategories: user-user, item-item, and user-item. The user-user algorithm utilizes the feedback from similar users to recommend items, and it follows the idea of “others similar to you liked this.” This algorithm is useful when the number of users is much smaller than the amount of items, but the downside is that adding new users will be expensive because all similarities between users must be updated. The next type of collaborative filtering algorithm is the item-item algorithm. This algorithm uses feedback on items previously liked by the user to recommend similar items and follows the idea of “you might like this because you also like that.” Contrary to the user-user algorithm, the item-item algorithm works best when the amount of items is much less than the number of users or when items don’t change much, but its downside is that adding a new item requires updating the that item’s similarity to every other item. The final type of collaborative filtering is the user-item algorithm where both user and item data are calculated using matrix factorization techniques to recommend an item. Although the user-item algorithm utilizes positive traits of both the user-user and item-item algorithms, it shares the downside that adding users or items can become difficult. All three of these share a common problem, more commonly known as the cold-start problem: the user must give feedback on items before accurate recommendations can be made.</p>
+      <p style="text-indent: 50px; padding: 10px;">The content-based model solves the cold-start problem by approaching recommendation in a slightly different way. This algorithm has the same approach as the collaborative filtering algorithm, but instead of recommending based on feedback data, the content-based model recommends based on content-similarity. In order to do so, items must have a dataset of descriptions that can be compared to each other. For example, in the case of keychains, data could include the color, design, originality, etc. Then if a user buys an item, the recommendation algorithm can recommend another item with a similar color or design. With the progress of AI and machine learning, this recommendation algorithm has become more practical and affordable to use, and it provides more practicality than the collaborative filtering algorithm.</p>
+      <p style="text-indent: 50px; padding: 10px;">Recommendation Algorithms today use combinations of both the content-based model and the collaborative filtering algorithm in order to solve the cold-start problem while also introducing the user to items personalized to their liking. Technology and development in fields such as deep learning has accelerated the growth and effectiveness of recommendation algorithms, and these algorithms will continue to bring people closer together.</p>
+      <!-- insert at least one graphic -->
+      <div style="text-align: center;">
+      	<img src="../../Files/matrixFactorization.png" alt="An image showing matrix factorization">
+      </div>
+      <br>
+
+      <h3 class="subheading">The Feedback Loop</h3>
+      <p style="text-indent: 50px; padding: 10px;">Although recommendation algorithms help personalize a user’s experience, they can also limit the exposure the user gets to different items. In a world where humans are often connected by platforms such as Instagram or Youtube, bias from recommendation algorithms can limit the type of content a user sees.</p>
+      <p style="text-indent: 50px; padding: 10px;">When visualizing a loop, it can be described as a continuous thread whose ends are connected to each other. The feedback loop operates in a similar fashion. The feedback loop can be described as a system where the output is fed back into the system as future inputs. These feedback loops can be positive or negative, depending on the type of action being done.</p>
+      <p style="text-indent: 50px; padding: 10px;">Positive feedback loops repeat actions that have worked well in the past. If, for example, a user enjoys watching a particular type of video, the positive feedback loop will continue to recommend that type of video because the user’s watchtime of that video continues to increase. Positive feedback loops are generally used to amplify a desirable variable’s effect. For example, a user who enjoys watching cat videos will continue to be recommended cat videos because of the positive feedback loop. Though, positive feedback loops must be implemented with caution because without a way to check the loop, a system might become unstable, such as a user only being recommended cat videos and nothing else. The negative feedback loop reduces this detrimental effect.</p>
+      <p style="text-indent: 50px; padding: 10px;">Negative feedback loops are more stable compared to positive feedback loops, but in order to make up for stability, the negative feedback sacrifices accuracy. Negative feedback loops check themselves through regulations to maintain an optimal state. An example of this would be a thermostat with a set high and a set low. Once this thermostat reaches a certain temperature, it will turn off, letting the temperature slowly change and eventually requiring the thermostat to turn on again. Negative feedback loops provide consistency and a way to prevent itself from going rogue that the positive feedback loops lack.</p>
+      <p style="text-indent: 50px; padding: 10px;">Feedback loops aren’t restricted to the confines of computer science though. Different fields such as biology and business also apply concepts of positive and negative feedback loops either for better or worse. The self-sufficiency of using the output as input allows for potential for future technologies and techniques to improve.</p>
+      <!-- insert at least one graphic-->
+      <div style="text-align: center;">
+	<img src="../../Files/feedbackLoops.png" alt="A graphic explaining negative and positive feedback loops">
+      </div>
+      <br>
+
+      <h3 class="subheading">Conspiracy Theories & Algorithmic Amplification</h3>
+      <p style="text-indent: 50px; padding: 10px;">The spread of false information has become increasingly dangerous and widespread as society becomes more interconnected. One post from a semi-popular person can be seen by hundreds, maybe even thousands, of people within an hour. Supported by the structure of our current societal culture, the spread of false information is a serious problem that is sometimes even rewarded.</p>
+      <p style="text-indent: 50px; padding: 10px;">There is no doubt that algorithms have played a major role in connecting society, but at the same time, these algorithms have prompted societies to shoot itself in the foot. In the case of video platforms, such as Youtube, that reward watchtime using ad revenue, more interesting videos attract more watchtime, playing into the algorithm. Compared to generic videos that stick to the rules of knowledge, conspiracy theories keep audiences engaged, increasing the audience and playing into the algorithm. Quickly, these controversial videos and posts spread to a wide range of users through the complex recommendation algorithms. If the information being spread positively affected society, the recommendation algorithm would be making a positive impact. In this case, however, the recommendation algorithm is playing a much more devious role.</p>
+      <p style="text-indent: 50px; padding: 10px;">Conspiracy theories are mostly false and create misconceptions, but they attract viewers that can’t find the truth due to the interesting nature of conspiracy theories. Assisted by the recommendation algorithm, the impact of false information will continue to spread. Seeing that a user enjoys viewing a conspiracy theory will lead the algorithm to recommend another conspiracy theory, creating a near infinite loop of conspiracies and lies.</p>
+      <br>
+
+      <h3 class="subheading">Platform Incentives</h3>
+      <p style="text-indent: 50px; padding: 10px;">Platforms often offer users incentive to create and post content on their site. Youtube has implemented a practical system of rewarding those who gain traction on their site. Although many other platforms offer similar incentives, the content discussed in the next couple paragraphs analyzes Youtube’s implementation.</p>
+      <p style="text-indent: 50px; padding: 10px;">With more than 1.8 billion users, Youtube is one of the largest video sharing platforms on the internet. In order to keep these users engaged, Youtube must output a wide variety of content that fits many people’s desires, but such an enormous scale of videos is nearly impossible for only one organization to maintain. Due to this, Youtube outsources content creation to content creators while providing incentives for creators who do well. Above a certain following, creators often get their channel monetized, meaning that they will gain additional revenue from factors such as ad revenue. Although money earned from advertisements may be low at first, as a content creator grows their channel, more ads will play on one video, incentivising the creators to grow their channel. Along with gaining ad revenue is the promise of fame and a louder voice in the moshpit of society, and the creator’s voice becomes more influential as their audience grows. With influence comes the heavy burden of making responsible choices with the content that creators publish.</p>
+      <p style="text-indent: 50px; padding: 10px;">Once tempted by the taste of fame, several content creators begin yearning for only the incentives that Youtube provides them. Because of this, the work that these content creators have put in to push appealing content is lost, and their channel becomes filled with only the latest trends that seem to play into the algorithm. Of course, the algorithm is, most of the time, not healthy for society as spreading false information with algorithmic amplification becomes common. As more content creators see that certain content plays into the algorithm (i.e. people enjoy watching this type of content), some content creators begin to create only what works, leading to a significant decrease in originality and sometimes even the validity of the information being presented. The voice that these creators have is also a detriment if the creator doesn’t spread correct information. All of this snowballed from the incentive that a platform, in this case Youtube, provides to its creators</p>
+      <p style="text-indent: 50px; padding: 10px;">In many cases, supporting content creation benefits both the platform and the creators. It spurs original content and helps circulate benefits for creators, the platform, the user, advertisers, and many other factors that take part in this loop. The caveat to this positivity is that these incentives may cause creators to lose sight of the truth and spread conspiracies and lies.</p>
+      <br>
+
+      <h3 class="subheading">Potential for Exploitation</h3>
+      <p style="text-indent: 50px; padding: 10px;">Social media platforms are created in order to connect people efficiently and effectively without slower traditional methods such as writing letters. We can now see what our friends and family did the previous weekend (to the degree of which they are willing to share) instantaneously. Though with this connection throughout society, there is a high likelihood that false information is spread for personal gain.</p>
+      <p style="text-indent: 50px; padding: 10px;">A user’s voice in social media can dictate the amount of influence they have over the people who follow them. Events such as critical news often circulate around social media, and this is where many people will first hear about the event. Because of this priority, people often believe whatever is seen on social media as what actually happened, but the truth can often be twisted or reworded into a beneficial form for the creator. This action is similar to those used in politics, where disproving data or information is left out, making the presented information extremely misleading. In many cases, these types of posts spark a type of emotion such as anger or empathy that keeps users engaged about a completely false, or maybe even made up, situation all to gain more favor in recommendation algorithms. This benefits the creator as the algorithm will increase their popularity and voice while they lead a group of users who believe what they see on the internet. Content creators can then spin their own web of lies and conspiracies in order to gain more followers while overlooking the detrimental effect of their spread of false information.</p>
+      <p style="text-indent: 50px; padding: 10px;">A user’s voice in social media can dictate the amount of influence they have over the people who follow them. Events such as critical news often circulate around social media, and this is where many people will first hear about the event. Because of this priority, people often believe whatever is seen on social media as what actually happened, but the truth can often be twisted or reworded into a beneficial form for the creator. This action is similar to those used in politics, where disproving data or information is left out, making the presented information extremely misleading. In many cases, these types of posts spark a type of emotion such as anger or empathy that keeps users engaged about a completely false, or maybe even made up, situation all to gain more favor in recommendation algorithms. This benefits the creator as the algorithm will increase their popularity and voice while they lead a group of users who believe what they see on the internet. Content creators can then spin their own web of lies and conspiracies in order to gain more followers while overlooking the detrimental effect of their spread of false information.</p>
+      <div style="text-align: center;">
+	<img src="../../Files/misleadingPost.JPG" alt="A misleading post about COVID-19">
+      </div>
+      <br>
+
+      <h3 class="subheading">Works Cited</h3>
+      <p class="hangingIndent" style="padding: 10px;">Fitzgibbons, Laura. “What is feedback loop? | Definition from TechTarget.” <em>TechTarget</em>, https://www.techtarget.com/searchitchannel/definition/feedback-loop. Accessed 19 October 2023.</p>
+      <p class="hangingIndent" style="padding: 10px;">Kornbluh, Karen. “Disinformation, Radicalization, and Algorithmic Amplification: What Steps Can Congress Take?” <em>Just Security</em>, 7 February 2022, <a href="https://www.justsecurity.org/79995/disinformation-radicalization-and-algorithmic-amplification-what-steps-can-congress-take/">https://www.justsecurity.org/79995/disinformation-radicalization-and-algorithmic-amplification-what-steps-can-congress-take/</a>. Accessed 19 October 2023.</p>
+      <p class="hangingIndent" style="padding: 10px;">Rocca, Baptiste. “Introduction to recommender systems | by Baptiste Rocca.” <em>Towards Data Science</em>, 2 June 2019, <a href="https://towardsdatascience.com/introduction-to-recommender-systems-6c66cf15ada">https://towardsdatascience.com/introduction-to-recommender-systems-6c66cf15ada</a>. Accessed 19 October 2023.</p>
+      <p class="hangingIndent" style="padding: 10px;">Thomas, Elise. “Conspiracy Theories on Amazon Book Recommendation Algorithm.” <em>Vision of Humanity</em>, <a href="https://www.visionofhumanity.org/amazons-algorithms-conspiracy-theories-and-extremist-literature/">https://www.visionofhumanity.org/amazons-algorithms-conspiracy-theories-and-extremist-literature/</a>. Accessed 19 October 2023.</p>
+      <p class="hangingIndent" style="padding: 10px;">“What are my incentives for uploading content to YouTube?” <em>Quora</em>, <a href="https://www.quora.com/What-are-my-incentives-for-uploading-content-to-YouTube">https://www.quora.com/What-are-my-incentives-for-uploading-content-to-YouTube</a>. Accessed 19 October 2023.</p>
+      <br>
+      
+    </div>
+
+    
+    
+  </body>
+</html>

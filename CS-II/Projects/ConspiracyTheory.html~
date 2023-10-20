@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Digital Portfolio</title>
+    <link rel="stylesheet" href="../../CS-I/Journals/style.css">
+
+  </head>
+
+  <body>
+    <div class="head">
+      <div class="heading border" style="margin: auto; border-style: solid; width: 90%; background-color: #E2E2E2; position: relative;">
+	<h1 style="text-decoration: none;"><i>Conspiracy Theories</i></h1>
+      </div>
+    </div>
+    <br>
+
+    <div class="nav" style="clear: both; position: sticky;">
+      <ul class="nav" style="position: relative;">
+	<li class="nav"><a href="https://codermerlin.com/users/ming-ruei-jang/Digital%20Portfolio/index.html" class="nav">Home</a></li>
+	<li class="nav"><a href="https://codermerlin.com/users/ming-ruei-jang/Digital%20Portfolio/AboutMe.html" class="nav">About Me</a></li>
+	<li class="nav" style="float: right"><a href="https://codermerlin.com/users/ming-ruei-jang/Digital%20Portfolio/CS-III/index.html" class="nav">Computer Science III</a></li>
+	<li class="nav" style="float: right"><a href="https://codermerlin.com/users/ming-ruei-jang/Digital%20Portfolio/CS-II/index.html" class="nav">Computer Science II</a></li>
+	<li class="nav" style="float: right"><a href="https://codermerlin.com/users/ming-ruei-jang/Digital%20Portfolio/CS-I/index.html" class="nav">Computer Science I</a></li>
+      </ul>
+      <br>
+    </div>
+  
+    
+    <div style='border-style: double; width: 80%; background-color: #E2E2E2; position: relative; margin: auto; clear: both;'>
+      <!--
+      <h3 class="subheading"></h3>
+      <p style="text-indent: 50px; padding: 10px;"></p>
+      <br>
+      -->
+
+      <h3 class="subheading">The Basics of Recommendation Algorithms</h3>
+      <p style="text-indent: 50px; padding: 10px;">Recommendation Algorithms play an essential role in personalizing a user’s experience on different platforms. The purpose of a recommendation algorithm is to determine the user’s preferences and find content that the user might enjoy based on these preferences.Typically, recommendation algorithms are split into two different types using different types of data: collaborative filtering models and content-based models. The collaborative filtering algorithm uses data that is gathered from feedback, either implicit (such as watch time for a video) or explicit (such as a like on a post) of either the user or the item that is being recommended.</p>
+      <p style="text-indent: 50px; padding: 10px;">The collaborative filtering algorithm is divided into three subcategories: user-user, item-item, and user-item. The user-user algorithm utilizes the feedback from similar users to recommend items, and it follows the idea of “others similar to you liked this.” This algorithm is useful when the number of users is much smaller than the amount of items, but the downside is that adding new users will be expensive because all similarities between users must be updated. The next type of collaborative filtering algorithm is the item-item algorithm. This algorithm uses feedback on items previously liked by the user to recommend similar items and follows the idea of “you might like this because you also like that.” Contrary to the user-user algorithm, the item-item algorithm works best when the amount of items is much less than the number of users or when items don’t change much, but its downside is that adding a new item requires updating the that item’s similarity to every other item. The final type of collaborative filtering is the user-item algorithm where both user and item data are calculated using matrix factorization techniques to recommend an item. Although the user-item algorithm utilizes positive traits of both the user-user and item-item algorithms, it shares the downside that adding users or items can become difficult. All three of these share a common problem, more commonly known as the cold-start problem: the user must give feedback on items before accurate recommendations can be made.</p>
+      <p style="text-indent: 50px; padding: 10px;">The content-based model solves the cold-start problem by approaching recommendation in a slightly different way. This algorithm has the same approach as the collaborative filtering algorithm, but instead of recommending based on feedback data, the content-based model recommends based on content-similarity. In order to do so, items must have a dataset of descriptions that can be compared to each other. For example, in the case of keychains, data could include the color, design, originality, etc. Then if a user buys an item, the recommendation algorithm can recommend another item with a similar color or design. With the progress of AI and machine learning, this recommendation algorithm has become more practical and affordable to use, and it provides more practicality than the collaborative filtering algorithm.</p>
+      <p style="text-indent: 50px; padding: 10px;">Recommendation Algorithms today use combinations of both the content-based model and the collaborative filtering algorithm in order to solve the cold-start problem while also introducing the user to items personalized to their liking. Technology and development in fields such as deep learning has accelerated the growth and effectiveness of recommendation algorithms, and these algorithms will continue to bring people closer together.</p>
+      <!-- insert at least one graphic -->
+      <br>
+      
+    </div>
+
+    
+    
+  </body>
+</html>
