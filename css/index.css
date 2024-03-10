@@ -1,3 +1,65 @@
+:root {
+    --main-bg-color: #222831;
+    --main-glow-color: #892cdc;
+    --secondary-glow-color: #6499e9;
+}
+
+.progress {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.progress .rating {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.progress .rating .tick {
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    background: #000;
+    left: 50%;
+    transform-origin: 50% 9rem;
+    opacity: 0;
+    animation: animate .1s linear forwards;
+}
+
+@keyframes animate {
+    to {
+        opacity: 1;
+    }
+}
+
+.progress .rating .tick:nth-child(-n+91) { /* +1 value of data */
+    background: #0f0;
+    box-shadow: 0 0 15px #0f0,0 0 30px #0f0;
+}
+
+.progress .rating h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.progress .rating h2 span {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.progress .rating h2 sup {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
 .flyInRight {
     animation: flyInRight 2s;
 }
@@ -55,5 +117,31 @@
     }
     100% {
         opacity: 1;
+    }
+}
+
+.glowImgPri {
+    animation: glowImgPri 2s ease-in-out infinite alternate;
+}
+
+@keyframes glowImgPri {
+    from {
+        box-shadow: 0 0 10px var(--main-glow-color), 0 0 15px var(--main-glow-color), 0 0 20px var(--main-glow-color), 0 0 25px var(--main-glow-color);
+    }
+    to {
+        box-shadow: 0 0 15px var(--main-glow-color), 0 0 20px var(--main-glow-color), 0 0 25px var(--main-glow-color), 0 0 30px var(--main-glow-color);
+    }
+}
+
+.glowImgSec {
+    animation: glowImgSec 2s ease-in-out infinite alternate;
+}
+
+@keyframes glowImgSec {
+    from {
+        box-shadow: 0 0 5px var(--secondary-glow-color), 0 0 10px var(--secondary-glow-color), 0 0 15px var(--secondary-glow-color), 0 0 20px var(--secondary-glow-color);
+    }
+    to {
+        box-shadow: 0 0 10px var(--secondary-glow-color), 0 0 15px var(--secondary-glow-color), 0 0 20px var(--secondary-glow-color), 0 0 25px var(--secondary-glow-color);
     }
 }
