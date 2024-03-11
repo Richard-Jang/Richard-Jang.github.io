@@ -7,6 +7,7 @@
 body {
     max-width: 100vw;
     overflow-x: hidden;
+    background-color: #892cdc;
 }
 
 .flyInRight {

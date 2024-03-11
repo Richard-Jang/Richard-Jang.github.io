@@ -3,19 +3,22 @@
 
 const pausePlay = (target, targetButton) => {
 
-    /*
-    const targetAttribute = document.getElementsByClassName(target).data-bs-ride;
-    //const targetAttribute = targetElement.getAttribute('data-bs-ride');
-    const buttonElement = document.getElementsByClassName(targetButton);
-
-    if (targetAttribute == "true") {
-        buttonElement.innerText = '<i class="bi bi-pause-fill"></i>';
-        targetAttribute = "false";
-    } else {
-        buttonElement.innerText = '<i class="bi bi-play-fill"></i>';
-        targetAttribute = "true";
+    const targetElement = document.getElementById(target);
+    let targetAttribute = ""
+    targetElement.onload = () => {
+        targetAttribute = targetElement.getAttribute('data-bs-interval');
     }
-    */
-    const buttonElement = document.getElementsByClassName(targetButton);
-    buttonElement.innerText = '<i class="bi bi-play-fill"></i>';
+    //let targetAttribute = targetElement.onload = () => {targetElement.getAttribute('data-bs-interval');}
+    let buttonElement = document.getElementById(targetButton);
+    console.log(targetAttribute);
+
+    if (targetAttribute == "3000") {
+        buttonElement.innerHTML = '<i class="bi bi-play-fill"></i>';
+        targetElement.setAttribute("data-bs-interval", "100");
+    } else {
+        buttonElement.innerHTML = '<i class="bi bi-pause-fill"></i>';
+        targetElement.setAttribute("data-bs-interval", "3000");
+    }
+
+
 }
