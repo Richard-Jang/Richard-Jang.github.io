@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 :root {
     --main-bg-color: #222831;
     --main-glow-color: #892cdc;
     --secondary-glow-color: #6499e9;
 }
 
-body {
-    max-width: 100vw;
+html, body {
+    max-width: 100%;
     overflow-x: hidden;
+}
+
+body {
     background-color: #892cdc;
 }
 
@@ -94,4 +99,39 @@ body {
     to {
         box-shadow: 0 0 10px var(--secondary-glow-color), 0 0 15px var(--secondary-glow-color), 0 0 20px var(--secondary-glow-color), 0 0 25px var(--secondary-glow-color);
     }
+}
+
+.navlink {
+    font-family: 'Philosopher', sans-serif;
+    color: #ffffff;
+    transition: all .3s ease-in-out;
+}
+
+.navlink:hover {
+    color: var(--main-glow-color);
+    scale: 1.05;
+}
+
+.cardContainer {
+    transition: all .5s ease-in-out;
+}
+
+.cardContainer:hover {
+    scale: 1.05;
+}
+
+.Linkedin {
+    background: #0b66c3;
+}
+
+.Instagram {
+    background: linear-gradient(to right top, #f9ce34, #ee2a7b, #6228d7);
+}
+
+.Discord {
+    background: #5865f2;
+}
+
+.Gmail {
+    background: #c71610;
 }
