@@ -1,114 +1,283 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <!DOCTYPE html>
+    <html>
+    <head>
     <title>J1002</title>
-  </head>
+    <link href="../../assets/ico/person.png" rel="icon" type="image/x-icon" />
 
-  <body>
-    <h3>Name: Richard Jang</h3>
-    <h3>Journal: J1002</h3>
-    <h3>Date: 21-Aug-2022</h3>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <br>
-    <h1>Shell</h1>
-    <br>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <ul class="nav">
-      <li class="nav"><a href="https://codermerlin.com/users/ming-ruei-jang/Digital%20Portfolio/index.html" class="nav">Home</a></li>
-      <li class="nav"><a href="https://codermerlin.com/users/ming-ruei-jang/Digital%20Portfolio/AboutMe.html" class="nav">About Me</a></li>
-      <li class="nav" style="float: right"><a href="https://codermerlin.com/users/ming-ruei-jang/Digital%20Portfolio/CS-III/index.html" class="nav">Computer Science III</a></li>
-      <li class="nav" style="float: right"><a href="https://codermerlin.com/users/ming-ruei-jang/Digital%20Portfolio/CS-II/index.html" class="nav">Computer Science II</a></li>
-      <li class="nav" style="float: right"><a href="https://codermerlin.com/users/ming-ruei-jang/Digital%20Portfolio/CS-I/index.html" class="nav">Computer Science I</a></li>
-    </ul>
-    <br>
-    
-    <p class="Question">I received assistance from: no one</p>
-    <p class="Question">I assisted: Mina and Ethan</p>
-    <br>
+    <script defer src="../../js/viewOnScroll.js"></script>
+    <link href="../../css/index.css" rel="stylesheet">
+    <link href="../../css/journal.css">
+    </head>
 
-    <p class="Question">1: Name at least two other services that you personally use which are implemented using a Client/ Server Model.</p>
-    <p class="Answers">Messaging and Internet (like google)</p>
-    <br>
+    <body style="background-color: #353a40;">
+    <!-- Top Navbar -->
+    <div class="fixed-top" style="width: 100%; height: 5rem;">
+        <nav class="navbar navbar-dark bg-dark fixed-top" data-bs-theme="dark">
+            <div class="container-fluid" style="background-color: 31363f;">
+                <a class="navbar-brand" href="../../index.html">Richard Jang</a>
+                <button
+                    class="navbar-toggler d-block d-lg-none"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="offcanvas offcanvas-end"
+                    tabindex="-1"
+                    id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel"
+                >
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                            Richard Jang
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close text-reset"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"  
+                            id="closeButton"
+                        ></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="../../index.html#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="../../index.html#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="../../index.html#experience">Experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="../../index.html#projects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="../../index.html#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-none d-lg-flex flex-row align-items-center justify-content-end">
+                    <a class="text-decoration-none fs-5 navlink ms-4 me-4" href="../../index.html#home">Home</a>
+                    <a class="text-decoration-none fs-5 navlink ms-4 me-4" href="../../index.html#about">About</a>
+                    <a class="text-decoration-none fs-5 navlink ms-4 me-4" href="../../index.html#experience">Experience</a>
+                    <a class="text-decoration-none fs-5 navlink ms-4 me-4" href="../../index.html#projects">Projects</a>
+                    <a class="text-decoration-none fs-5 navlink ms-4 me-4" href="../../index.html#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </div>
 
-    <p class="Question">2: It appears that both Jack Williams and John Williams can have a directory of the same name. Do you think the ability to have two different users create a directory of the same name is important? Why?</p>
-    <p class="Answers">I think that it is important because it allows different people to talk about the same subject and still be able to clearly locate both without getting them mixed up.</p>
-    <br>
+    <!-- Content -->
+    <div class="w-100" style="height: 5rem;"></div>
+    <div class="container border border-5 border-dark-subtle rounded" style="background-color: #efdfc6; color: #242424;">
+        <div class="w-100" style="height: 1rem;"></div>
+        <div class="mt-4 mb-4 ms-4 me-4 FadeIn">
+        <div class="h2 mt-2 mb-2">Name: Richard Jang</div>
+        <div class="h2 mt-2 mb-2">Journal: J1002</div>
+        <div class="h2 mt-2 mb-2">Date: 21-Aug-2022</div>
+        </div>
 
-    <p class="Question">3: Why do you think the home directory has a special symbol to represent it?</p>
-    <p class="Answers">The home directory has a special symbol because it is easier to locate when you are in the home directory and where it is.</p>
-    <br>
+        <div class="mt-4 mb-4 ms-4 me-4 FadeIn">
+        <div class="h1 d-flex flex-column align-items-center">Shell</div>
+        </div>
 
-    <p class="Question">4: Did the prompt change? If so, how? Why is this useful?</p>
-    <p class="Answers">The prompt changed because we wanted to go into a certain directory, and this is useful for getting around directories.</p>
-    <br>
+        <div class="mt-4 mb-4 ms-4 me-4 FadeIn">
+        <div class="fs-3">I recieved assistance from: no one</div>
+        <div class="fs-3">I assited: Mina and Ethan</div>
+        <a class="fs-3" href="https://codermerlin.academy/wiki/index.php/Shell">Coder Merlin Page</a>
+        </div>
 
-    <p class="Question">5.1: What happenes each time you press the (up arrow)?</p>
-    <p class="Answers">Pressing the up arrow goes to the previous typed command.</p>
-    <br>
+        <div class="d-flex flex-row align-self-center justify-content-center ">
+        <hr class="w-75 border border-top border-2 border-dark FadeIn"/>
+        </div>
 
-    <p class="Question">5.2: What happens each time you press the (down arrow)?</p>
-    <p class="Answers">Pressing the down arrow allows you to scroll through the command list that you have typed.</p>
-    <br>
+        <div class="mt-4 mb-4 ms-4 me-4 FadeIn">
+            <div class="fs-4 mt-3 mb-3">
+                1: Name at least two other services that you personally use which are implemented using a Client/ Server Model.
+            </div>
+            <div class="fs-5 mt-1 mb-1" style="text-indent: 20px;">
+                Messaging and Internet (like google)
+            </div>
+        </div>
+        
+        <div class="mt-4 mb-4 ms-4 me-4 FadeIn">
+            <div class="fs-4 mt-3 mb-3">
+                2: It appears that both Jack Williams and John Williams can have a directory of the same name. Do you think the ability to have two different users create a directory of the same name is important? Why?
+            </div>
+            <div class="fs-5 mt-1 mb-1" style="text-indent: 20px;">
+                I think that it is important because it allows different people to talk about the same subject and still be able to clearly locate both without getting them mixed up.
+            </div>
+        </div>
+        
+        <div class="mt-4 mb-4 ms-4 me-4 FadeIn">
+            <div class="fs-4 mt-3 mb-3">
+                3: Why do you think the home directory has a special symbol to represent it?
+            </div>
+            <div class="fs-5 mt-1 mb-1" style="text-indent: 20px;">
+                The home directory has a special symbol because it is easier to locate when you are in the home directory and where it is.
+            </div>
+        </div>
+        
+        <div class="mt-4 mb-4 ms-4 me-4 FadeIn">
+            <div class="fs-4 mt-3 mb-3">
+                4: Did the prompt change? If so, how? Why is this useful?
+            </div>
+            <div class="fs-5 mt-1 mb-1" style="text-indent: 20px;">
+                The prompt changed because we wanted to go into a certain directory, and this is useful for getting around directories.
+            </div>
+        </div>
+        
+        <div class="mt-4 mb-4 ms-4 me-4 FadeIn">
+            <div class="fs-4 mt-3 mb-3">
+                5.1: What happenes each time you press the (up arrow)?
+            </div>
+            <div class="fs-5 mt-1 mb-1" style="text-indent: 20px;">
+                Pressing the up arrow goes to the previous typed command.
+            </div>
+        </div>
+        
+        <div class="mt-4 mb-4 ms-4 me-4 FadeIn">
+            <div class="fs-4 mt-3 mb-3">
+                5.2: What happens each time you press the (down arrow)?
+            </div>
+            <div class="fs-5 mt-1 mb-1" style="text-indent: 20px;">
+                Pressing the down arrow allows you to scroll through the command list that you have typed.
+            </div>
+        </div>
+        
+        <div class="mt-4 mb-4 ms-4 me-4 FadeIn">
+            <div class="fs-4 mt-3 mb-3">
+                6: Was "Hello, World!" printed to the screen as before? If not, why not? What do you think happened to the text?
+            </div>
+            <div class="fs-5 mt-1 mb-1" style="text-indent: 20px;">
+                Text wasn't displayed because we only told the terminal to store the text.
+            </div>
+        </div>
+        
+        <div class="mt-4 mb-4 ms-4 me-4 FadeIn">
+            <div class="fs-4 mt-3 mb-3">
+                7.1: How does the "ls" command differ from the "tree" command?
+            </div>
+            <div class="fs-5 mt-1 mb-1" style="text-indent: 20px;">
+                The "ls" command only shows one path to the current directory. The tree command shows every directory and file under the home directory.
+            </div>
+        </div>
+        
+        <div class="mt-4 mb-4 ms-4 me-4 FadeIn">
+            <div class="fs-4 mt-3 mb-3">
+                7.2: How do you choose to use one over the other?
+            </div>
+            <div class="fs-5 mt-1 mb-1" style="text-indent: 20px;">
+                The "ls" command should be used when the user only wants to see the path to the current directory. When looking for a certain directory and its location, use the "tree" command.
+            </div>
+        </div>
+        
+        <div class="mt-4 mb-4 ms-4 me-4 FadeIn">
+            <div class="fs-4 mt-3 mb-3">
+                8.1: What do you think the argument to sleep specifies?
+            </div>
+            <div class="fs-5 mt-1 mb-1" style="text-indent: 20px;">
+                The argument to sleep specifies the amount of time that you want the program to sleep in seconds.
+            </div>
+        </div>
+        
+        <div class="mt-4 mb-4 ms-4 me-4 FadeIn">
+            <div class="fs-4 mt-3 mb-3">
+                8.2: Are you able to prove your hypothesis? How?
+            </div>
+            <div class="fs-5 mt-1 mb-1" style="text-indent: 20px;">
+                I can prove my hypothesis by running the sleep command with different value arguments and timing each of them.
+            </div>
+        </div>
+        
+        <div class="mt-4 mb-4 ms-4 me-4 FadeIn">
+            <div class="fs-4 mt-3 mb-3">
+                9.1: How is this behavior from what you expected?
+            </div>
+            <div class="fs-5 mt-1 mb-1" style="text-indent: 20px;">
+                I didn't expect to be able to run multiple sleep commands at the same time.
+            </div>
+        </div>
+        
+        <div class="mt-4 mb-4 ms-4 me-4 FadeIn">
+            <div class="fs-4 mt-3 mb-3">
+                9.2: What do you think it means to run a job in the background?
+            </div>
+            <div class="fs-5 mt-1 mb-1" style="text-indent: 20px;">
+                Running a job in the background means that while the program is running, other programs can be executed at the same time.
+            </div>
+        </div>
+        
+        <div class="mt-4 mb-4 ms-4 me-4 FadeIn">
+            <div class="fs-4 mt-3 mb-3">
+                9.3: What do you think the number displayed in the brackets specifies?
+            </div>
+            <div class="fs-5 mt-1 mb-1" style="text-indent: 20px;">
+                The number in the brackets shows the order in which the jobs are run, kind of like an array for jobs.
+            </div>
+        </div>
+        
+        <div class="mt-4 mb-4 ms-4 me-4 FadeIn">
+            <div class="fs-4 mt-3 mb-3">
+                10.1: What do you observe as you execute the "jobs" command?
+            </div>
+            <div class="fs-5 mt-1 mb-1" style="text-indent: 20px;">
+                The list of jobs currently running is displayed.
+            </div>
+        </div>
+        
+        <div class="mt-4 mb-4 ms-4 me-4 FadeIn">
+            <div class="fs-4 mt-3 mb-3">
+                10.2: How do you explain your observations?
+            </div>
+            <div class="fs-5 mt-1 mb-1" style="text-indent: 20px;">
+                The "jobs" command shows an array of sorts displaying the jobs that are currently running and giving them what can be related to an ID.
+            </div>
+        </div>
 
-    <p class="Question">6: Was "Hello, World!" printed to the screen as before? If not, why not? What do you think happened to the text?</p>
-    <p class="Answers">Text wasn't displayed because we only told the terminal to store the text.</p>
-    <br>
+        <div class="d-flex flex-row align-self-center justify-content-center ">
+        <hr class="w-75 border border-top border-2 border-dark FadeIn"/>
+        </div>
 
-    <p class="Question">7.1: How does the "ls" command differ from the "tree" command?</p>
-    <p class="Answers">The "ls" command only shows one path to the current directory. The tree command shows every directory and file under the home directory.</p>
-    <br>
+        <div class="mt-4 mb-4 ms-4 me-4 FadeIn">
+        <div class="fs-4 mt-3 mb-3">What did I learn? What is the "big idea"?</div>
+        <div class="fs-5 mt-1 mb-1" style="text-indent: 20px;">
+            I learned the capabilities of the shell and that it has a great number of uses.
+        </div>
+        <div class="fs-4 mt-3 mb-3">What challenges did I encounter?</div>
+        <div class="fs-5 mt-1 mb-1" style="text-indent: 20px;">
+            The idea of jobs was a bit challenging, but I now understand it.
+        </div>
+        <div class="fs-4 mt-3 mb-3">How could this experience be improved?</div>
+        <div class="fs-5 mt-1 mb-1" style="text-indent: 20px;">
+            I think explaining more of what a shell is instead of what it can do will be much more useful.
+        </div>
+        <div class="fs-4 mt-3 mb-3">Free Reflection: How has what I've learned affected my thinking?</div>
+        <div class="fs-5 mt-1 mb-1" style="text-indent: 20px;">
+            What I've learned today lets me think of the shell in a completely different way. I now think of it as a connected web of files and directories.
+        </div>
+        </div>
 
-    <p class="Question">7.2: How do you choose to use one over the other?</p>
-    <p class="Answers">The "ls" command should be used when the user only wants to see the path to the current directory. When looking for a certain directory and its location, use the "tree" command.</p>
-    <br>
+        <div class="FadeIn w-100 d-flex flex-column align-items-center justify-content-center">
+        <a href="../index.html" type="link" class="w-75 btn btn-outline-dark mt-4 mb-4 ms-4 me-4">Back to Index</a>
+        </div>
+        <div class="w-100" style="height: 1rem;"></div>
+    </div>
+    <div class="w-100" style="height: 3rem;"></div>
 
-    <p class="Question">8.1: What do you think the argument to sleep specifies?</p>
-    <p class="Answers">The argument to sleep specifies the amount of time that you want the program to sleep in seconds.</p>
-    <br>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <p class="Question">8.2: Are you able to prove your hypothesis? How?</p>
-    <p class="Answers">I can prove my hypothesis by running the sleep command with different value arguments and timing each of them.</p>
-    <br>
-
-    <p class="Question">9.1: How is this behavior from what you expected?</p>
-    <p class="Answers">I didn't expect to be able to run multiple sleep commands at the same time.</p>
-    <br>
-
-    <p class="Question">9.2: What do you think it means to run a job in the background?</p>
-    <p class="Answers">Running a job in the background means that while the program is running, other programs can be executed at the same time.</p>
-    <br>
-
-    <p class="Question">9.3: What do you think the number displayed in the brackets specifies?</p>
-    <p class="Answers">The number in the brackets shows the order in which the jobs are run, kind of like an array for jobs.</p>
-    <br>
-
-    <p class="Question">10.1: What do you observe as you execute the "jobs" command?</p>
-    <p class="Answers">The list of jobs currently running is displayed.</p>
-    <br>
-
-    <p class="Question">10.2: How do you explain your observations?</p>
-    <p class="Answers">The "jobs" command shows an array of sorts displaying the jobs that are currently running and giving them what can be related to an ID.</p>
-    <br>
-
-    <hr>
-    
-    <p class="Question">What did I learn? What is the "big idea"?</p>
-    <p class="Answers">I learned the capabilities of the shell and that it has a great number of uses.</p>
-    <br>
-
-    <p class="Question">What challenges did I encounter?</p>
-    <p class="Answers">The idea of jobs was a bit challenging, but I now understand it.</p>
-    <br>
-
-    <p class="Question">How could this experience be improved?</p>
-    <p class="Answers">I think explaining more of what a shell is instead of what it can do will be much more useful.</p>
-    <br>
-
-    <p class="Question">Free Reflection: How has what I've learned affected my thinking?</p>
-    <p class="Answers">What I've learned today lets me think of the shell in a completely different way. I now think of it as a connected web of files and directories.</p>
-    <br>
-    
-    <a href="https://codermerlin.com/users/ming-ruei-jang/Digital%20Portfolio/CS-I/index.html"><button type="button" class="button1"><span>Back to Index</span></button></a>
-  </body>
-</html>
+    </body>
+    </html>
