@@ -107,7 +107,18 @@ body {
     transition: all .3s ease-in-out;
 }
 
+.navbar-brand {
+    font-family: 'Philosopher', sans-serif;
+    color: #ffffff;
+    transition: all .3s ease-in-out;
+}
+
 .navlink:hover {
+    color: var(--main-glow-color);
+    scale: 1.05;
+}
+
+.navbar-brand:hover {
     color: var(--main-glow-color);
     scale: 1.05;
 }
