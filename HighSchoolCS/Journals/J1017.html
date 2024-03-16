@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Change -->
+    <title>J1017</title>
+    <link href="../../assets/ico/person.png" rel="icon" type="image/x-icon" />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <script defer src="../../js/viewOnScroll.js"></script>
+    <link href="../../css/index.css" rel="stylesheet">
+    <link href="../../css/journal.css">
+  </head>
+
+  <body style="background-color: #353a40;">
+    <!-- Top Navbar -->
+    <div class="fixed-top" style="width: 100%; height: 5rem;">
+      <nav class="navbar navbar-dark bg-dark fixed-top" data-bs-theme="dark">
+          <div class="container-fluid" style="background-color: 31363f;">
+              <a class="navbar-brand" href="../../index.html">Richard Jang</a>
+              <button
+                  class="navbar-toggler d-block d-lg-none"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+              >
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                  class="offcanvas offcanvas-end"
+                  tabindex="-1"
+                  id="offcanvasNavbar"
+                  aria-labelledby="offcanvasNavbarLabel"
+              >
+                  <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                          Richard Jang
+                      </h5>
+                      <button
+                          type="button"
+                          class="btn-close text-reset"
+                          data-bs-dismiss="offcanvas"
+                          aria-label="Close"  
+                          id="closeButton"
+                      ></button>
+                  </div>
+                  <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                          <li class="nav-item">
+                              <a class="nav-link text-light" href="../../index.html#home">Home</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link text-light" href="../../index.html#about">About</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link text-light" href="../../index.html#experience">Experience</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link text-light" href="../../index.html#projects">Projects</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link text-light" href="../../index.html#contact">Contact</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="d-none d-lg-flex flex-row align-items-center justify-content-end">
+                  <a class="text-decoration-none fs-5 navlink ms-4 me-4" href="../../index.html#home">Home</a>
+                  <a class="text-decoration-none fs-5 navlink ms-4 me-4" href="../../index.html#about">About</a>
+                  <a class="text-decoration-none fs-5 navlink ms-4 me-4" href="../../index.html#experience">Experience</a>
+                  <a class="text-decoration-none fs-5 navlink ms-4 me-4" href="../../index.html#projects">Projects</a>
+                  <a class="text-decoration-none fs-5 navlink ms-4 me-4" href="../../index.html#contact">Contact</a>
+              </div>
+          </div>
+      </nav>
+    </div>
+
+    <!-- Content -->
+    <div class="w-100" style="height: 5rem;"></div>
+    <div class="container border border-5 border-dark-subtle rounded" style="background-color: #454b57; color: #ffffff;">
+      <div class="w-100" style="height: 1rem;"></div>
+      <div class="mt-4 mb-4 ms-4 me-4 FadeIn">
+        <!-- Change -->
+        <div class="fs-4 mt-2 mb-2">Name: Richard Jang</div>
+        <div class="fs-4 mt-2 mb-2">Journal: J1017</div>
+        <div class="fs-4 mt-2 mb-2">Date: 15-Oct-2022</div>
+      </div>
+
+      <!-- Change -->
+      <div class="mt-4 mb-4 ms-4 me-4 FadeIn">
+        <div class="h1 d-flex flex-column align-items-center">Binary Adders</div>
+      </div>
+
+      <!-- Change -->
+      <div class="mt-4 mb-4 ms-4 me-4 FadeIn">
+        <div class="fs-4">I recieved assistance from: no one</div>
+        <div class="fs-4">I assited: no one</div>
+        <a class="fs-4" href="https://www.codermerlin.academy/wiki/index.php/Binary_Adders">Coder Merlin Page</a>
+      </div>
+
+      <div class="d-flex flex-row align-self-center justify-content-center ">
+        <hr class="w-75 border border-top border-2 border-dark-subtle FadeIn"/>
+      </div>
+
+      <!-- Change -->
+      <div class="mt-4 mb-4 ms-4 me-4 FadeIn">
+        <div class="fs-4 mt-3 mb-3">
+          1.1: What truth table do you recognize that produces the output of the Carry column?
+        </div>
+        <div class="fs-5 mt-1 mb-1" style="text-indent: 20px;">
+          The output of the Carry column is a standard output for an AND gate.
+        </div>
+      </div>
+
+      <div class="mt-4 mb-4 ms-4 me-4 FadeIn">
+        <div class="fs-4 mt-3 mb-3">
+          1.2: What truth table do you recognize that produces the output of the Sum column?
+        </div>
+        <div class="fs-5 mt-1 mb-1" style="text-indent: 20px;">
+          The output column of the Sum column is the standard output for an XOR gate.
+        </div>
+      </div>
+
+      <div class="mt-4 mb-4 ms-4 me-4 FadeIn">
+        <div class="fs-4 mt-3 mb-3">
+          2.1: What do you notice about the relationship between the first half (top four rows) of the full-adder as compared to all of the rows of the half-adder.
+        </div>
+        <div class="fs-5 mt-1 mb-1" style="text-indent: 20px;">
+          For the carry-in row, the digits are reversed. For the two inputs (in this case a and b), the rows repeat (first half and bottom half are the same). For the carry-out column, the top half is an AND gate and the bottom half is an OR gate. For the sum output, the bottom half of the rows are inverses of the top half (the top half is XOR and the bottom half is EQUIVALENCE).
+        </div>
+      </div>
+
+      <div class="mt-4 mb-4 ms-4 me-4 FadeIn">
+        <div class="fs-4 mt-3 mb-3">
+          2.2: Why is this true?
+        </div>
+        <div class="fs-5 mt-1 mb-1" style="text-indent: 20px;">
+          For the carry-in, the first half represents when there aren't any carries, and the second half represents when there is carry. The other inputs are the same because that is standard order for the truth table. The carry-out column is different because the carry-in column adds one, making the output carry more. The sum is different because the carry will inverse the sum output.
+        </div>
+      </div>
+
+      <div class="mt-4 mb-4 ms-4 me-4 FadeIn">
+        <div class="fs-4 mt-3 mb-3">
+          3.1: Why does the least significant bit position use a half-adder rather than a full-adder?
+        </div>
+        <div class="fs-5 mt-1 mb-1" style="text-indent: 20px;">
+          The least significant bit position uses a half-adder because there are no carries in that position.
+        </div>
+      </div>
+
+      <div class="mt-4 mb-4 ms-4 me-4 FadeIn">
+        <div class="fs-4 mt-3 mb-3">
+          3.2: Assume that proper inputs are applied for all bits in numbers A and B. Will the correct output from S be avaliable instantaneously? If not, why not?
+        </div>
+        <div class="fs-5 mt-1 mb-1" style="text-indent: 20px;">
+          For the half adder, the sum will be instantaneously because it won't have to consider the carry. For full-adders, the correct output will not be instantaneous because they have to take into account the carry from previous operations.
+        </div>
+      </div>
+
+      <div class="mt-4 mb-4 ms-4 me-4 FadeIn">
+        <div class="fs-4 mt-3 mb-3">
+          3.3: Assume that we have a standard (non-scientific calculator) capable of adding two 16-bit words. Two numbers, A and B, are added together. After the addition, it is noted that C15 is high. What can we infer? What is this state commonly called?
+        </div>
+        <div class="fs-5 mt-1 mb-1" style="text-indent: 20px;">
+          We can infer that the number will be greater than 65535. This number is called the 16-bit integer limit.
+        </div>
+      </div>
+
+      <div class="d-flex flex-row align-self-center justify-content-center ">
+        <hr class="w-75 border border-top border-2 border-dark-subtle FadeIn"/>
+      </div>
+
+      <div class="mt-4 mb-4 ms-4 me-4 FadeIn">
+        <div class="fs-3 t-3 mb-3">Exercises</div>
+
+        <div class="fs-4 mt-3 mb-3">1. Construct a half-adder.</div>
+        <div class="mt-1 mb-1 d-flex flex-row align-items-center justify-content-center">
+          <a class="w-75 d-flex flex-row align-items-center justify-content-center" href="https://tinyurl.com/2cbwb8u6"><img src="../../assets/journals/half-adderRJ.png" class="w-75"/></a>
+        </div>
+        
+        <div class="fs-4 mt-3 mb-3">2. Construct a full-adder.</div>
+        <div class="mt-1 mb-1 d-flex flex-row align-items-center justify-content-center">
+          <a class="w-75 d-flex flex-row align-items-center justify-content-center" href="https://tinyurl.com/2le3hrl7"><img src="../../assets/journals/full-adderRJ.png" class="w-75"/></a>
+        </div>
+      </div>
+
+      <div class="d-flex flex-row align-self-center justify-content-center ">
+        <hr class="w-75 border border-top border-2 border-dark-subtle FadeIn"/>
+      </div>
+
+      <!-- Change -->
+      <div class="mt-4 mb-4 ms-4 me-4 FadeIn">
+        <div class="fs-4 mt-3 mb-3">What did I learn? What is the "big idea"?</div>
+        <div class="fs-5 mt-1 mb-1" style="text-indent: 20px;">
+          I learned how electronics do addition with binary numbers.
+        </div>
+        <div class="fs-4 mt-3 mb-3">What challenges did I encounter?</div>
+        <div class="fs-5 mt-1 mb-1" style="text-indent: 20px;">
+          A challenge was understanding why the bits were different after factoring in the carry.
+        </div>
+        <div class="fs-4 mt-3 mb-3">How could this experience be improved?</div>
+        <div class="fs-5 mt-1 mb-1" style="text-indent: 20px;">
+          This experience is very well built and understandable.
+        </div>
+        <div class="fs-4 mt-3 mb-3">Free Reflection: How has what I've learned affected my thinking?</div>
+        <div class="fs-5 mt-1 mb-1" style="text-indent: 20px;">
+          This changed the way I interpret computers using electricity and computer chips to do math.
+        </div>
+      </div>
+
+      <div class="FadeIn w-100 d-flex flex-column align-items-center justify-content-center">
+        <a href="../index.html" type="link" class="w-75 btn btn-outline-light mt-4 mb-4 ms-4 me-4">Back to Index</a>
+      </div>
+      <div class="w-100" style="height: 1rem;"></div>
+    </div>
+    <div class="w-100" style="height: 3rem;"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  </body>
+</html>
