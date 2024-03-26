@@ -2,8 +2,7 @@
 
 :root {
     --main-bg-color: #222831;
-    --main-glow-color: #892cdc;
-    --secondary-glow-color: #6499e9;
+    --main-glow-color: #6499e9;
 }
 
 html, body {
@@ -12,7 +11,7 @@ html, body {
 }
 
 body {
-    background-color: #892cdc;
+    background-color: var(--main-glow-color);
 }
 
 .flyInRight {
@@ -102,13 +101,11 @@ body {
 }
 
 .navlink {
-    font-family: 'Philosopher', sans-serif;
     color: #ffffff;
     transition: all .3s ease-in-out;
 }
 
 .navbar-brand {
-    font-family: 'Philosopher', sans-serif;
     color: #ffffff;
     transition: all .3s ease-in-out;
 }
@@ -148,5 +145,5 @@ body {
 }
 
 .Resume {
-    background: #2685fd;
+    background: #7852a9;
 }
