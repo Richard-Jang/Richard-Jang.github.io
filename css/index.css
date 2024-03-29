@@ -136,8 +136,8 @@ body {
     background: linear-gradient(to right top, #f9ce34, #ee2a7b, #6228d7);
 }
 
-.Discord {
-    background: #5865f2;
+.GitHub {
+    background: #333;
 }
 
 .Gmail {
@@ -145,5 +145,5 @@ body {
 }
 
 .Resume {
-    background: #7852a9;
+    background: #335384;
 }
