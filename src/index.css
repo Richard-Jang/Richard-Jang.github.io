@@ -1,0 +1,14 @@
+:root {
+  color-scheme: light;
+  --page-bg: #000000;
+  --text: #f0f0f0;
+  --subtle: #64748b;
+}
+
+body {
+  margin: 0;
+  background: var(--page-bg);
+  color: var(--text);
+}
+
+@import "tailwindcss";
