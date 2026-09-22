@@ -1,14 +1,46 @@
 :root {
-  color-scheme: light;
-  --page-bg: #000000;
-  --text: #f0f0f0;
+  color-scheme: dark;
+  --page-bg: #05060f;
+  --text: #f4f3f9;
   --subtle: #64748b;
+  --accent: #9b87f5;
 }
 
 body {
   margin: 0;
   background: var(--page-bg);
   color: var(--text);
+  font-family: 'Manrope', system-ui, sans-serif;
+}
+
+.font-display {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+}
+
+.font-quote {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+}
+
+.star {
+  position: absolute;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.65);
+  animation: twinkle var(--dur, 3s) ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: var(--min-op, 0.22); }
+  50% { opacity: 0.9; }
+}
+
+.nebula {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  mix-blend-mode: screen;
 }
 
 @import "tailwindcss";

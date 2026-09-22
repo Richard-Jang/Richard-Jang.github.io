@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { RootRoute } from './pages/Route';
+import { RootRoute, ContactRoute } from './pages/Route';
 
-const router = createBrowserRouter([RootRoute], {});
+const router = createBrowserRouter([RootRoute, ContactRoute], {});
 
 function App() {
   return (
