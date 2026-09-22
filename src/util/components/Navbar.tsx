@@ -5,10 +5,10 @@ import { fadeIn, staggerContainer } from '../variants';
 import { ContactsComponent } from '../contact';
 
 const navItems = [
-  { to: '/', label: 'Home' },
+  { to: '/home', label: 'Home' },
   { to: '/about', label: 'About' },
   { to: '/experience', label: 'Experience' },
-  { to: '/contact', label: 'Contact' },
+  { to: '/', label: 'Contact' },
 ]
 
 export default function Navbar() {

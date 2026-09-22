@@ -51,7 +51,7 @@ export function Component() {
       >
         <motion.img
           variants={fadeIn}
-          src="/avatar.png"
+          src="/profile.png"
           alt="Richard Jang"
           className="mx-auto h-[104px] w-[104px] rounded-full border-2 object-cover shadow-[0_0_24px_rgba(155,135,245,0.5)] md:h-32 md:w-32"
           style={{ borderColor: "var(--accent)" }}
@@ -86,7 +86,7 @@ export function Component() {
 
         <motion.button
           variants={fadeIn}
-          onClick={() => navigate("/")}
+          onClick={() => navigate("./home")}
           className="mt-8 text-sm text-white/50 transition-colors hover:text-white cursor-pointer"
         >
           ← Back to the site
